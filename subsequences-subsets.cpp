@@ -11,8 +11,8 @@ void generate_subsequence(char *in, char *out, int i, int j)
       return;
    }
    //rec case
-   out[j]=in[i];
    //include the current character
+   out[j]=in[i];
    generate_subsequence(in,out,i+1,j+1);
    //exclude the current character
    generate_subsequence(in,out,i+1,j);
